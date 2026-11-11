@@ -5,7 +5,7 @@ export const Roles = [
         nombre: 'Sanador',
         descripcion_i: 'Especializado en el tratamiento, recuperación y cuidado de personas',
         descripcion_d: 'Los sanadores dedican gran parte de su tiempo al estudio de la salud, el cuerpo humano y los métodos de recuperación. Aunque muchos poseen una fuerte vocación por ayudar a otros, no es un requisito indispensable. Su principal característica es la búsqueda constante de conocimientos que les permitan preservar, restaurar y/o entender la vida',
-        Especialidades: ['ESP_Sa_01', 'ESP_Sa_02', 'ESP_Sa_03', 'ESP_Sa_04', 'ESP_Sa_05', 'ESP_Sa_06'],
+        Especialidades: ['ESP_San_01', 'ESP_San_02', 'ESP_San_03', 'ESP_San_04', 'ESP_San_05', 'ESP_San_06'],
         estadisticas: { Fisico: 0, Ingenio: 2, Lavia: 2, Percepción: 2, Herramientas: 1 },
     },
     {
@@ -14,7 +14,7 @@ export const Roles = [
         nombre: 'Orador',
         descripcion_i: 'Especializado en la comunicación, interpretación y uso de las palabras y el lenguaje',
         descripcion_d: 'Los oradores entienden que las palabras son una herramienta tan poderosa como cualquier otra. Por ello buscan dominar no sólo la expresión verbal, sino también la interpretación, la persuasión y la comprensión de las personas, desarrollando una visión más profunda de las relaciones humanas y el lenguaje',
-        Especialidades: ['ESP_Or_01', 'ESP_Or_02', 'ESP_Or_03', 'ESP_Or_04', 'ESP_Or_05', 'ESP_Or_06'],
+        Especialidades: ['ESP_Or_01', 'ESP_ORA_02', 'ESP_ORA_03', 'ESP_ORA_04', 'ESP_ORA_05', 'ESP_ORA_06'],
         estadisticas: { Fisico: 0, Ingenio: 1, Lavia: 2, Percepción: 2, Herramientas: 0 },
     },
     {
@@ -23,7 +23,7 @@ export const Roles = [
         nombre: 'Experto',
         descripcion_i: 'Especializado en el conocimiento teórico y académico de múltiples áreas',
         descripcion_d: 'A diferencia de otros especialistas, el erudito rara vez centra toda su atención en un único campo. Su motivación principal es la adquisición de conocimiento, explorando distintas disciplinas y ampliando constantemente su comprensión del mundo, aunque su búsqueda de conocimiento suele girar en torno a la “humanidad o sociedad”',
-        Especialidades: ['ESP_Ex_01', 'ESP_Ex_02', 'ESP_Ex_03', 'ESP_Ex_04', 'ESP_Ex_05', 'ESP_Ex_06'],
+        Especialidades: ['ESP_Ex_01', 'ESP_Exp_02', 'ESP_Exp_03', 'ESP_Exp_04', 'ESP_Exp_05', 'ESP_Ex_06'],
         estadisticas: { Fisico: 0, Ingenio: 2, Lavia: 1, Percepción: 1, Herramientas: 0 },
     },
     {
@@ -32,7 +32,7 @@ export const Roles = [
         nombre: 'Peleador',
         descripcion_i: 'Especializado en enfrentamientos físicos y resolución directa de conflictos',
         descripcion_d: 'El combatiente ha desarrollado su cuerpo y habilidades para afrontar problemas de forma directa. Ya sea mediante técnicas de combate, armas o tácticas poco convencionales, busca convertirse en alguien capaz de superar obstáculos mediante la acción.',
-        Especialidades: ['ESP_Pe_01', 'ESP_Pe_02', 'ESP_Pe_03', 'ESP_Pe_04', 'ESP_Pe_05', 'ESP_Pe_06'],
+        Especialidades: ['ESP_Pel_01', 'ESP_Pel_02', 'ESP_Pel_03', 'ESP_Pel_04', 'ESP_Pel_05', 'ESP_Pel_06'],
         estadisticas: { Fisico: 2, Ingenio: 1, Lavia: 1, Percepción: 1, Herramientas: 1 },
     },
     {
@@ -41,7 +41,7 @@ export const Roles = [
         nombre: 'Intimidador',
         descripcion_i: 'Especializado en ejercer presión física, psicológica o social mediante el físico, la presencia, la actitud o el comportamiento',
         descripcion_d: 'Los intimidadores comprenden el valor de la presencia y la imagen personal. Más allá de la fuerza física, desarrollan la capacidad de influir sobre otros mediante la confianza, la determinación y la presión psicológica, logrando imponer su voluntad incluso sin recurrir a la violencia, aunque no les molesta tener que usarla o incorporarla como una de sus herramientas.',
-        Especialidades: ['ESP_In_01', 'ESP_In_02', 'ESP_In_03', 'ESP_In_04', 'ESP_In_05', 'ESP_In_06'],
+        Especialidades: ['ESP_Int_01', 'ESP_Int_02', 'ESP_Int_03', 'ESP_Int_04', 'ESP_Int_05', 'ESP_Int_06'],
         estadisticas: { Fisico: 1, Ingenio: 2, Lavia: 2, Percepción: 2, Herramientas: 0 },
     },
     {
@@ -50,7 +50,7 @@ export const Roles = [
         nombre: 'Corredor',
         descripcion_i: 'Especializado en movilidad, velocidad y superación de obstáculos',
         descripcion_d: 'Los corredores entrenan su cuerpo con el objetivo de desplazarse de la forma más rápida y eficiente posible. Suelen desarrollar habilidades relacionadas con la agilidad, el equilibrio y la adaptación al entorno, permitiéndoles atravesar obstáculos y moverse con facilidad incluso en terrenos difíciles.',
-        Especialidades: ['ESP_Co_01', 'ESP_Co_02', 'ESP_Co_03', 'ESP_Co_04', 'ESP_Co_05', 'ESP_Co_06'],
+        Especialidades: ['ESP_Cor_01', 'ESP_Cor_02', 'ESP_Cor_03', 'ESP_Cor_04', 'ESP_Cor_05', 'ESP_Cor_06'],
         estadisticas: { Fisico: 2, Ingenio: 1, Lavia: 1, Percepción: 2, Herramientas: 0 },
     },
     {
@@ -59,7 +59,7 @@ export const Roles = [
         nombre: 'Fabricante',
         descripcion_i: 'Especializado en crear, modificar y ensamblar herramientas o dispositivos',
         descripcion_d: 'Los fabricantes poseen una fuerte afinidad por la tecnología y la innovación. No se conforman con entender cómo funciona algo; buscan construirlo, modificarlo y perfeccionarlo mediante el uso de herramientas y conocimientos especializados.',
-        Especialidades: ['ESP_Fa_01', 'ESP_Fa_02', 'ESP_Fa_03', 'ESP_Fa_04', 'ESP_Fa_05', 'ESP_Fa_06'],
+        Especialidades: ['ESP_Fab_01', 'ESP_Fab_02', 'ESP_Fab_03', 'ESP_Fab_04', 'ESP_Fab_05', 'ESP_Fab_06'],
         estadisticas: { Fisico: 1, Ingenio: 2, Lavia: 0, Percepción: 1, Herramientas: 2 },
     },
     {
@@ -68,7 +68,7 @@ export const Roles = [
         nombre: 'Desarmador',
         descripcion_i: 'Especializado en desmontar, sabotear o manipular mecanismos complejos',
         descripcion_d: 'Los desarmadores sienten una gran curiosidad por el funcionamiento interno de los objetos y sistemas. Aunque muchos comienzan desmontando cosas por simple interés, con el tiempo desarrollan la capacidad de identificar fallos, vulnerabilidades y mecanismos ocultos, convirtiéndose en expertos en manipulación y sabotaje.',
-        Especialidades: ['ESP_De_01', 'ESP_De_02', 'ESP_De_03', 'ESP_De_04', 'ESP_De_05', 'ESP_De_06'],
+        Especialidades: ['ESP_Des_01', 'ESP_Des_02', 'ESP_Des_03', 'ESP_Des_04', 'ESP_Des_05', 'ESP_Des_06'],
         estadisticas: { Fisico: 0, Ingenio: 2, Lavia: 0, Percepción: 1, Herramientas: 2 },
     },
     {
@@ -77,7 +77,7 @@ export const Roles = [
         nombre: 'Chatarrero',
         descripcion_i: 'Especializado en improvisar soluciones prácticas utilizando pocos recursos',
         descripcion_d: 'Los chatarreros destacan por su creatividad y capacidad de adaptación. Acostumbrados a trabajar con recursos muy limitados o precarios, desarrollan la habilidad de aprovechar todos los materiales disponibles para la creación de objetos útiles o resolver problemas de forma rápida y práctica.',
-        Especialidades: ['ESP_Ch_01', 'ESP_Ch_02', 'ESP_Ch_03', 'ESP_Ch_04', 'ESP_Ch_05', 'ESP_Ch_06'],
+        Especialidades: ['ESP_Cha_01', 'ESP_Cha_02', 'ESP_Cha_03', 'ESP_Cha_04', 'ESP_Cha_05', 'ESP_Cha_06'],
         estadisticas: { Fisico: 1, Ingenio: 2, Lavia: 0, Percepción: 1, Herramientas: 1 },
     },
     {
@@ -86,7 +86,7 @@ export const Roles = [
         nombre: 'Militar',
         descripcion_i: 'Especializado en el uso de armas de fuego y conocimiento militar',
         descripcion_d: 'Los militares suelen proceder de entornos donde la disciplina, la organización y el entrenamiento tienen un papel importante. Gracias a ello desarrollan ciertos conocimientos relacionados con las armas de fuego, equipamiento táctico, estrategia y procedimientos militares.',
-        Especialidades: ['ESP_Mi_01', 'ESP_Mi_02', 'ESP_Mi_03', 'ESP_Mi_04', 'ESP_Mi_05', 'ESP_Mi_06'],
+        Especialidades: ['ESP_Mil_01', 'ESP_Mil_02', 'ESP_Mil_03', 'ESP_Mil_04', 'ESP_Mil_05', 'ESP_Mil_06'],
         estadisticas: { Fisico: 2, Ingenio: 2, Lavia: 0, Percepción: 2, Herramientas: 2 },
     },
     {
@@ -95,7 +95,7 @@ export const Roles = [
         nombre: 'Salvaje',
         descripcion_i: 'Especializado en el uso de armas rudimentarias, tácticas de cacería y enfrentamiento salvaje',
         descripcion_d: 'Los salvajes suelen sentir una fuerte conexión con la naturaleza y los entornos abiertos. Ya sea por afición, necesidad o tradición, desarrollan habilidades relacionadas con la supervivencia, el rastreo y el uso de armas sencillas pero efectivas, adaptándose al entorno en lugar de depender de tecnología avanzada.',
-        Especialidades: ['ESP_Sa_01', 'ESP_Sa_02', 'ESP_Sa_03', 'ESP_Sa_04', 'ESP_Sa_05', 'ESP_Sa_06'],
+        Especialidades: ['ESP_sal_01', 'ESP_sal_02', 'ESP_sal_03', 'ESP_sal_04', 'ESP_sal_05', 'ESP_sal_06'],
         estadisticas: { Fisico: 2, Ingenio: 2, Lavia: 0, Percepción: 2, Herramientas: 1 },
     },
     {
@@ -104,7 +104,7 @@ export const Roles = [
         nombre: 'Competidor',
         descripcion_i: 'Especializado en tiros directos y precisos, con un dominio de la técnica y la puntería',
         descripcion_d: 'Los competidores representan el aspecto más técnico y profesional del tiro. Suelen dedicar incontables horas a perfeccionar su precisión mediante entrenamiento constante, desarrollando disciplina, concentración y una ejecución extremadamente refinada.',
-        Especialidades: ['ESP_Co_01', 'ESP_Co_02', 'ESP_Co_03', 'ESP_Co_04', 'ESP_Co_05', 'ESP_Co_06'],
+        Especialidades: ['ESP_Com_01', 'ESP_Com_02', 'ESP_Com_03', 'ESP_Com_04', 'ESP_Com_05', 'ESP_Com_06'],
         estadisticas: { Fisico: 2, Ingenio: 1, Lavia: 0, Percepción: 1, Herramientas: 2 },
     },
     {
@@ -113,7 +113,7 @@ export const Roles = [
         nombre: 'Rúnico',
         descripcion_i: 'Especializado en el uso de runas e inscripciones mágicas',
         descripcion_d: 'Los rúnicos presentan una extraña afinidad con el lenguaje rúnico. Aunque el origen de esta capacidad sigue siendo desconocido, poseen una facilidad extraordinaria para aprender, interpretar y utilizar estos símbolos, permitiéndoles desarrollar habilidades imposibles para la mayoría de los individuos.',
-        Especialidades: ['ESP_Ru_01', 'ESP_Ru_02', 'ESP_Ru_03', 'ESP_Ru_04', 'ESP_Ru_05', 'ESP_Ru_06'],
+        Especialidades: ['ESP_Run_01', 'ESP_Run_02', 'ESP_Run_03', 'ESP_Run_04', 'ESP_Run_05', 'ESP_Run_06'],
         estadisticas: { Fisico: 0, Ingenio: 2, Lavia: 1, Percepción: 2, Herramientas: 1 },
     },
     {
@@ -122,7 +122,7 @@ export const Roles = [
         nombre: 'Conjurador',
         descripcion_i: 'Especializado en alterar principios concretos de la realidad mediante conjuros',
         descripcion_d: 'Los conjuradores poseen una capacidad innata para interactuar con ciertos principios fundamentales de la realidad. Aunque estas capacidades suelen estar limitadas a fenómenos concretos, desarrollan una comprensión intuitiva de los mismos, permitiéndoles manipularlos mediante el uso de conjuros.',
-        Especialidades: ['ESP_Co_01', 'ESP_Co_02', 'ESP_Co_03', 'ESP_Co_04', 'ESP_Co_05', 'ESP_Co_06'],
+        Especialidades: ['ESP_con_01', 'ESP_con_02', 'ESP_con_03', 'ESP_con_04', 'ESP_con_05', 'ESP_con_06'],
         estadisticas: { Fisico: 0, Ingenio: 2, Lavia: 1, Percepción: 2, Herramientas: 1 },
     },
     {
@@ -131,7 +131,7 @@ export const Roles = [
         nombre: 'Reliquista',
         descripcion_i: 'Especializado en el uso e interacción con artefactos sobrenaturales',
         descripcion_d: 'Los reliquistas presentan una afinidad natural con las reliquias, artefactos u otros objetos anómalos. Esta conexión les permite comprenderlas, manipularlas y aprovechar sus propiedades con mayor facilidad que otras personas, convirtiéndolos en especialistas en el uso de artefactos anómalos.',
-        Especialidades: ['ESP_Re_01', 'ESP_Re_02', 'ESP_Re_03', 'ESP_Re_04', 'ESP_Re_05', 'ESP_Re_06'],
+        Especialidades: ['ESP_Rel_01', 'ESP_Rel_02', 'ESP_Rel_03', 'ESP_Rel_04', 'ESP_Rel_05', 'ESP_Rel_06'],
         estadisticas: { Fisico: 1, Ingenio: 1, Lavia: 0, Percepción: 2, Herramientas: 2 },
     },
     

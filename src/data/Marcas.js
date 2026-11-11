@@ -1,4 +1,4 @@
-const Marcas = [
+export const Marcas = [
     { 
         id: 'MAR_Ce_01',
         tipo_p: 'creer',

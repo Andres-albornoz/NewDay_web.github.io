@@ -1,4 +1,4 @@
-const Arquetipos = [
+export const Arquetipos = [
     {
         id: 'ARQ_01',
         nombre: 'Intelectual',

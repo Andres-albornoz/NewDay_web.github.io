@@ -1,4 +1,4 @@
-const PersonajeVAcio = () => ({
+export const PersonajeVAcio = () => ({
     id: null,
 
     // Información básica
@@ -61,7 +61,7 @@ const PersonajeVAcio = () => ({
     inventario: {}
 });
 
-const PersonajeEjemplo = {
+export const PersonajeEjemplo = {
     id: 'PER_0E',
 
     // Información básica

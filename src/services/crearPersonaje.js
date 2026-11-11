@@ -1,70 +1,75 @@
-import {roles} from './data/Roles.js'
+import { Roles } from '../data/Roles.js';
+import { PersonajeVAcio } from '../data/personaje.js';
 
-export function crearPersonaje(nombre, edad, arq, rol, marca) {
+const NIVEL_MAXIMO = 5;
 
-    // Busca los datos del rol seleccionado
-    const datosRol = roles.find(r => r.id === rol);
+/**
+ * Construye el objeto de personaje a partir de los datos del formulario.
+ * Las especialidades se normalizan contra las que pertenecen al rol y los
+ * hitos conseguidos equivalen a los puntos invertidos en especialidades.
+ */
+export function crearPersonaje(
+    nombre = '',
+    edad = 0,
+    arquetipo = '',
+    rol = '',
+    marca = '',
+    especialidades = {},
+    id = null
+) {
+    const datosRol = Roles.find((elemento) => elemento.id === rol);
 
-    // Comprueba que el rol exista
     if (!datosRol) {
         console.error('El rol seleccionado no existe');
         return null;
     }
 
-    // Crea un objeto vacío para las especialidades
+    const base = PersonajeVAcio();
     const especialidadesPersonaje = {};
 
-    // Añade cada especialidad del rol con nivel 0
-    datosRol.especialidades.forEach(especialidad => {
-        especialidadesPersonaje[especialidad] = 0;
+    (datosRol.Especialidades ?? []).forEach((idEspecialidad) => {
+        const nivel = Number(especialidades[idEspecialidad] ?? 0);
+
+        especialidadesPersonaje[idEspecialidad] = Number.isFinite(nivel)
+            ? Math.min(NIVEL_MAXIMO, Math.max(0, nivel))
+            : 0;
     });
 
-    // Crea y devuelve el personaje
+    const hitosInvertidos = Object.values(especialidadesPersonaje)
+        .reduce((total, nivel) => total + nivel, 0);
+
+    const identificador = id ?? (
+        typeof crypto !== 'undefined' &&
+        typeof crypto.randomUUID === 'function'
+            ? crypto.randomUUID()
+            : `PER_${Date.now()}`
+    );
+
     return {
-        id: crypto.randomUUID(),
+        ...base,
 
-        nombre: nombre,
-        edad: edad,
+        id: identificador,
+        nombre: String(nombre).trim(),
+        edad: Number(edad) || 0,
 
-        arquetipo: arq,
-        rol: rol,
-
-        estado_marcas: 'despierta',
-
-        marcas: [
-            marca
-        ],
+        arquetipo,
+        rol,
+        estado_marcas: base.estado_marcas,
+        marcas: marca ? [marca] : [],
 
         especialidades: especialidadesPersonaje,
 
-        atributos: {
-            vida: { valor: 5, estado: '/' },
-            aguante: { valor: 5, estado: '/' },
-            conexion: { valor: 3, estado: '/' },
-            espiritu: { valor: 3, estado: '/' }
-        },
-
-        // Copia las estadísticas iniciales del rol
         estadisticas: {
             ...datosRol.estadisticas
         },
 
-        conocimientos_basicos: {},
-
         puntos: {
+            ...base.puntos,
             historias: 1,
-
             hitos: {
-                disponibles: 15,
-                conseguidos: 0
-            },
-
-            aprendizajes: {
-                disponibles: 20,
-                conseguidos: 0
+                ...base.puntos.hitos,
+                conseguidos: hitosInvertidos
             }
-        },
-
-        inventario: {}
+        }
     };
 }
