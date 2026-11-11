@@ -14,7 +14,7 @@ export const Roles = [
         nombre: 'Orador',
         descripcion_i: 'Especializado en la comunicación, interpretación y uso de las palabras y el lenguaje',
         descripcion_d: 'Los oradores entienden que las palabras son una herramienta tan poderosa como cualquier otra. Por ello buscan dominar no sólo la expresión verbal, sino también la interpretación, la persuasión y la comprensión de las personas, desarrollando una visión más profunda de las relaciones humanas y el lenguaje',
-        Especialidades: ['ESP_Or_01', 'ESP_ORA_02', 'ESP_ORA_03', 'ESP_ORA_04', 'ESP_ORA_05', 'ESP_ORA_06'],
+        Especialidades: ['ESP_ORA_01', 'ESP_ORA_02', 'ESP_ORA_03', 'ESP_ORA_04', 'ESP_ORA_05', 'ESP_ORA_06'],
         estadisticas: { Fisico: 0, Ingenio: 1, Lavia: 2, Percepción: 2, Herramientas: 0 },
     },
     {
@@ -23,7 +23,7 @@ export const Roles = [
         nombre: 'Experto',
         descripcion_i: 'Especializado en el conocimiento teórico y académico de múltiples áreas',
         descripcion_d: 'A diferencia de otros especialistas, el erudito rara vez centra toda su atención en un único campo. Su motivación principal es la adquisición de conocimiento, explorando distintas disciplinas y ampliando constantemente su comprensión del mundo, aunque su búsqueda de conocimiento suele girar en torno a la “humanidad o sociedad”',
-        Especialidades: ['ESP_Ex_01', 'ESP_Exp_02', 'ESP_Exp_03', 'ESP_Exp_04', 'ESP_Exp_05', 'ESP_Ex_06'],
+        Especialidades: ['ESP_Exp_01', 'ESP_Exp_02', 'ESP_Exp_03', 'ESP_Exp_04', 'ESP_Exp_05', 'ESP_Exp_06'],
         estadisticas: { Fisico: 0, Ingenio: 2, Lavia: 1, Percepción: 1, Herramientas: 0 },
     },
     {
@@ -95,7 +95,7 @@ export const Roles = [
         nombre: 'Salvaje',
         descripcion_i: 'Especializado en el uso de armas rudimentarias, tácticas de cacería y enfrentamiento salvaje',
         descripcion_d: 'Los salvajes suelen sentir una fuerte conexión con la naturaleza y los entornos abiertos. Ya sea por afición, necesidad o tradición, desarrollan habilidades relacionadas con la supervivencia, el rastreo y el uso de armas sencillas pero efectivas, adaptándose al entorno en lugar de depender de tecnología avanzada.',
-        Especialidades: ['ESP_sal_01', 'ESP_sal_02', 'ESP_sal_03', 'ESP_sal_04', 'ESP_sal_05', 'ESP_sal_06'],
+        Especialidades: ['ESP_SalL_01', 'ESP_SalL_02', 'ESP_SalL_03', 'ESP_SalL_04', 'ESP_SalL_05', 'ESP_SalL_06'],
         estadisticas: { Fisico: 2, Ingenio: 2, Lavia: 0, Percepción: 2, Herramientas: 1 },
     },
     {
@@ -104,7 +104,7 @@ export const Roles = [
         nombre: 'Competidor',
         descripcion_i: 'Especializado en tiros directos y precisos, con un dominio de la técnica y la puntería',
         descripcion_d: 'Los competidores representan el aspecto más técnico y profesional del tiro. Suelen dedicar incontables horas a perfeccionar su precisión mediante entrenamiento constante, desarrollando disciplina, concentración y una ejecución extremadamente refinada.',
-        Especialidades: ['ESP_Com_01', 'ESP_Com_02', 'ESP_Com_03', 'ESP_Com_04', 'ESP_Com_05', 'ESP_Com_06'],
+        Especialidades: ['ESP_CMP_01', 'ESP_CMP_02', 'ESP_CMP_03', 'ESP_CMP_04', 'ESP_CMP_05', 'ESP_CMP_06'],
         estadisticas: { Fisico: 2, Ingenio: 1, Lavia: 0, Percepción: 1, Herramientas: 2 },
     },
     {
@@ -122,7 +122,7 @@ export const Roles = [
         nombre: 'Conjurador',
         descripcion_i: 'Especializado en alterar principios concretos de la realidad mediante conjuros',
         descripcion_d: 'Los conjuradores poseen una capacidad innata para interactuar con ciertos principios fundamentales de la realidad. Aunque estas capacidades suelen estar limitadas a fenómenos concretos, desarrollan una comprensión intuitiva de los mismos, permitiéndoles manipularlos mediante el uso de conjuros.',
-        Especialidades: ['ESP_con_01', 'ESP_con_02', 'ESP_con_03', 'ESP_con_04', 'ESP_con_05', 'ESP_con_06'],
+        Especialidades: ['ESP_Con_01', 'ESP_Con_02', 'ESP_Con_03', 'ESP_Con_04', 'ESP_Con_05', 'ESP_Con_06'],
         estadisticas: { Fisico: 0, Ingenio: 2, Lavia: 1, Percepción: 2, Herramientas: 1 },
     },
     {
